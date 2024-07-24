@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Muhammad Zaky Hilmy</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Favicon -->
+    <!-- (Favicon links remain unchanged) -->
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <p class="logo">Muhammad Zaky Hilmy</p>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Blog">Blog</a></li>
+            </ul>  
+            <img src="Image/sun.png" id="icon" alt="Icon">
+        </nav>
+    </header>
+
+    <!-- Home Entity -->
+    <section class="ortu" id="Home">
+        <div class="hero-content">
+            <ul class="icon">
+                <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a target="_blank" href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <div class="desk">
+                <h1 class="logo-2">Hi, I'am Zaky</h1>
+                <h4>Mahasiswa</h4>
+                <p>Mau kenalan lebih lanjut? Scroll kebawah gaess.</p>
+            </div>
+            <div class="image">
+                <img src="Image/zaky2.jpeg" alt="Lumi Novry M" class="lumi">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Entity -->
+    <section class="about" id="About">
+        <div class="title">
+            <h1>About Me</h1>
+            <p>My Introduction</p>
+        </div>
+        <div class="abt-isi">
+            <img src="Image/zakyhilmy.jpeg" alt="Lumi Novry M" class="lumi-abt">
+            <div class="text-abt">
+                <p>Saya kuliah di Universitas Muhammadiyah Riau dengan NIM 220401124 dengan prodi Teknik Informatika Fakultas Ilmu Komputer.
+                Saat ini, saya mencoba belajar website di mata kuliah Pemrograman Web yang diampu oleh Bapak Taslim, M.Kom, MTA, MCF.</p>
+                <button id="downloadCV">Download CV</button>                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Entity -->
+    <section class="service" id="Portfolio">
+        <div class="title">
+            <h1>Portofolio</h1>
+            <p>What I Offer</p>
+        </div>
+        <div class="view">
+            <div class="media-card">
+                <img src="Image/milad.jpeg" alt="Photo 1" class="media-item">
+                <p>Foto</p>
+            </div>
+            <div class="media-card">
+                <img src="Image/friend.jpeg" alt="Photo 2" class="media-item">
+                <p>Foto</p>
+            </div>
+            <div class="media-card">
+                <video controls class="media-item">
+                    <source src="Video/aik.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Entity -->
+    <section class="project" id="Blog">
+        <div class="title">
+            <h1 class="mark">My Project</h1>
+            <p>Project Results</p>
+        </div>
+        <div class="pro-container">
+            <img src="image/Project-4.png" alt="" class="jumbo">
+            <div class="thumbnail">
+                <img src="Image/web_polisi.jpeg" alt="Crash" class="thumb">
+                <img src="Image/siapotek.jpeg" alt="Crash" class="thumb">
+                <img src="Image/poster_aik.jpg" alt="Crash" class="thumb">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h4>Muhammad Zaky Hilmy <sup>&#169;</sup></h4>
+    </div>
+
+    <!-- Script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.getElementById('downloadCV').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'pdf/cv-zaky.pdf'; // Ganti dengan path file CV Anda
+            link.download = 'cv-zaky.pdf'; // Nama file saat diunduh
+            link.click();
+        });
+    </script>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
